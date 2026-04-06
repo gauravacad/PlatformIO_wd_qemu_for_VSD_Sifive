@@ -29,3 +29,5 @@ test_testing_command =
     -kernel
     ${platformio.build_dir}/${this.__env__}/firmware.elf
 ```
+Later run the command 
+## pio test -vvv --without-uploading
