@@ -6,3 +6,26 @@ PlatformIO_wd_qemu_for_VSD_Sifivepio
 
 # Run the command for running
 ## pio test -vvv --without-uploading
+
+
+
+# Platform.ini
+```
+;[env:native]
+;platform = native
+[env:hifive1]
+platform = sifive
+framework = freedom-e-sdk
+board = hifive1
+
+platform_packages =
+    platformio/tool-qemu-riscv
+build_flags = -DUNITY_INCLUDE_CONFIG_H
+test_testing_command =
+    ${platformio.packages_dir}/tool-qemu-riscv/bin/qemu-system-riscv32
+    -nographic
+    -machine 
+    sifive_e
+    -kernel
+    ${platformio.build_dir}/${this.__env__}/firmware.elf
+```
