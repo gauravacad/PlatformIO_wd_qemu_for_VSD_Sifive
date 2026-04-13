@@ -1,4 +1,4 @@
-# PlatformIO_wd_qemu_for_VSD_Sifive
+<img width="1059" height="668" alt="image" src="https://github.com/user-attachments/assets/fa774a05-f130-4c7e-abeb-44185da7345b" /># PlatformIO_wd_qemu_for_VSD_Sifive
 PlatformIO_wd_qemu_for_VSD_Sifivepio 
 
 # Install Riscv_tool_chain
@@ -6,6 +6,7 @@ PlatformIO_wd_qemu_for_VSD_Sifivepio
 
 # Run the command for running
 ## pio test -vvv --without-uploading
+## C:\Users\ceeri\.platformio\penv\Scripts\pio.exe test -vvv --without-uploading
 
 
 
